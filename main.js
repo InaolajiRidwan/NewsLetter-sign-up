@@ -7,6 +7,7 @@ let imageConfusion = document.getElementById("imgconfusion");
 function loginbtn() {
   if (!input.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
     errorMessage.style.display = "block";
+    input.style.borderColor = "red"
   } else {
     successMessage.style.display = "block";
     cardContent.style.display = "none";
